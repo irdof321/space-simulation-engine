@@ -11,7 +11,8 @@ internal enum RunMode
     OrbitalSystemTests,
     KeplerConverterTests,
     RecursiveInitializationTests,
-    MultiBodyInitializationTests
+    MultiBodyInitializationTests,
+    AxialRotationTests
 }
 
 internal enum LiveScenePreset
@@ -37,8 +38,8 @@ internal static class AppSettings
 
     // Live N-body simulation settings.
     // Six years are enough to see Comet C1 make one approximately 5.2-year orbit.
-    public const int SimulationYears = 600;
-    public const double TimeStepHours = 6.0;
+    public const int SimulationYears = 6000;
+    public const double TimeStepHours = 1.0;
     public const IntegratorKind LiveIntegrator = IntegratorKind.Verlet;
     // The physics runs N steps on every physics timer tick, regardless of paint rate.
     // WinForms timers share the UI thread: expensive frames may delay ticks.

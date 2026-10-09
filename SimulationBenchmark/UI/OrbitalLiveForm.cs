@@ -16,6 +16,8 @@ internal sealed class OrbitalLiveForm : Form
     private readonly Button _pauseButton;
     private readonly ComboBox _speedSelector;
     private readonly ComboBox _refreshSelector;
+    private readonly CheckBox _rotationPreviewToggle;
+    private RotationPreviewForm? _rotationPreview;
 
     private int _completedSteps;
     private int _stepsPerUpdate = AppSettings.InitialStepsPerUpdate;
@@ -43,23 +45,60 @@ internal sealed class OrbitalLiveForm : Form
             BackColor = Color.FromArgb(18, 27, 43)
         };
 
+        // Use a two-column layout instead of overlapping docked labels and
+        // an absolutely positioned checkbox. The checkbox must remain visible
+        // at different window sizes and DPI scaling factors.
+        var headerLayout = new TableLayoutPanel
+        {
+            Dock = DockStyle.Fill,
+            ColumnCount = 2,
+            RowCount = 2,
+            Margin = Padding.Empty,
+            Padding = Padding.Empty,
+            BackColor = Color.FromArgb(18, 27, 43)
+        };
+        headerLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f));
+        headerLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 192f));
+        headerLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 35f));
+        headerLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
+
         var title = new Label
         {
-            Dock = DockStyle.Top,
-            Height = 31,
+            Dock = DockStyle.Fill,
+            TextAlign = ContentAlignment.MiddleLeft,
             Text = "LIVE ORBITAL SIMULATION  •  XY PROJECTION",
             Font = new Font("Segoe UI", 14f, FontStyle.Bold),
-            ForeColor = Color.White
+            ForeColor = Color.White,
+            AutoEllipsis = true,
+            Margin = Padding.Empty
         };
         _statusLabel = new Label
         {
             Dock = DockStyle.Fill,
+            TextAlign = ContentAlignment.MiddleLeft,
             ForeColor = Color.FromArgb(178, 197, 219),
             Font = new Font("Consolas", 10f),
-            AutoEllipsis = true
+            AutoEllipsis = true,
+            Margin = Padding.Empty
         };
-        header.Controls.Add(_statusLabel);
-        header.Controls.Add(title);
+
+        _rotationPreviewToggle = new CheckBox
+        {
+            Text = "Show axial rotation",
+            AutoSize = false,
+            Dock = DockStyle.Fill,
+            TextAlign = ContentAlignment.MiddleLeft,
+            Margin = new Padding(8, 0, 0, 0),
+            ForeColor = Color.FromArgb(207, 222, 238),
+            BackColor = Color.FromArgb(18, 27, 43)
+        };
+        _rotationPreviewToggle.CheckedChanged += (_, _) => ToggleRotationPreview();
+
+        headerLayout.Controls.Add(title, 0, 0);
+        headerLayout.Controls.Add(_rotationPreviewToggle, 1, 0);
+        headerLayout.Controls.Add(_statusLabel, 0, 1);
+        headerLayout.SetColumnSpan(_statusLabel, 2);
+        header.Controls.Add(headerLayout);
 
         var footer = new Panel
         {
@@ -122,7 +161,7 @@ internal sealed class OrbitalLiveForm : Form
             Size = new Size(110, 30),
             FlatStyle = FlatStyle.Flat
         };
-        int[] refreshRates = { 1, 2, 5, 10, 15, 30, 60 };
+        int[] refreshRates = { 1, 2, 5, 10, 15, 30 };
         foreach (int refreshRate in refreshRates)
             _refreshSelector.Items.Add($"{refreshRate} FPS");
         _refreshSelector.SelectedIndex = Array.IndexOf(
@@ -210,6 +249,27 @@ internal sealed class OrbitalLiveForm : Form
             _physicsTimer.Stop();
             _displayTimer.Stop();
         };
+    }
+
+    private void ToggleRotationPreview()
+    {
+        if (_rotationPreviewToggle.Checked)
+        {
+            if (_rotationPreview != null && !_rotationPreview.IsDisposed)
+                return;
+            _rotationPreview = new RotationPreviewForm(_session);
+            _rotationPreview.FormClosed += (_, _) =>
+            {
+                _rotationPreview = null;
+                if (!_rotationPreviewToggle.IsDisposed)
+                    _rotationPreviewToggle.Checked = false;
+            };
+            _rotationPreview.Show(this);
+        }
+        else
+        {
+            _rotationPreview?.Close();
+        }
     }
 
     private void TogglePause()

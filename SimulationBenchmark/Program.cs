@@ -26,11 +26,15 @@ internal static class Program
             case RunMode.MultiBodyInitializationTests:
                 MultiBodyInitializationTests.Run();
                 break;
+            case RunMode.AxialRotationTests:
+                AxialRotationTests.Run();
+                break;
             case RunMode.AllTests:
                 OrbitalSystemTests.Run();
                 KeplerConverterTests.Run();
                 RecursiveInitializationTests.Run();
                 MultiBodyInitializationTests.Run();
+                AxialRotationTests.Run();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(AppSettings.Mode));

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3zB6SJt0S0Q=",
+  "dgSpecHash": "sEvtu9n36dw=",
   "success": true,
-  "projectFilePath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+  "projectFilePath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irdof\\.nuget\\packages\\harfbuzzsharp\\8.3.1.1\\harfbuzzsharp.8.3.1.1.nupkg.sha512",
     "C:\\Users\\irdof\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\8.3.1.1\\harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
@@ -25,9 +25,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Le package 'OpenTK 3.1.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net10.0-windows7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
-      "projectPath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+      "projectPath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+      "filePath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
       "libraryId": "OpenTK",
       "targetGraphs": [
         "net10.0-windows"
@@ -37,9 +37,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Le package 'OpenTK.GLControl 3.1.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net10.0-windows7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
-      "projectPath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+      "projectPath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+      "filePath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
       "libraryId": "OpenTK.GLControl",
       "targetGraphs": [
         "net10.0-windows"
@@ -49,9 +49,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Le package 'SkiaSharp.Views.WindowsForms 3.119.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net10.0-windows7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
-      "projectPath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+      "projectPath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+      "filePath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
       "libraryId": "SkiaSharp.Views.WindowsForms",
       "targetGraphs": [
         "net10.0-windows"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj": {}
+    "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj": {}
   },
   "projects": {
-    "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj": {
+    "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj",
+        "projectUniqueName": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj",
         "projectName": "PhysicsSimulation",
-        "projectPath": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj",
+        "projectPath": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj",
         "packagesPath": "C:\\Users\\irdof\\.nuget\\packages\\",
-        "outputPath": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\obj\\",
+        "outputPath": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\irdof\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj": {
+    "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+        "projectUniqueName": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
         "projectName": "SimulationBenchmark",
-        "projectPath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\SimulationBenchmark.csproj",
+        "projectPath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\SimulationBenchmark.csproj",
         "packagesPath": "C:\\Users\\irdof\\.nuget\\packages\\",
-        "outputPath": "E:\\c#project\\PhysicsSimulation\\SimulationBenchmark\\obj\\",
+        "outputPath": "E:\\c#project\\space-simulation-engine\\SimulationBenchmark\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\irdof\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,8 +92,8 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj": {
-                "projectPath": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj"
+              "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj": {
+                "projectPath": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj"
               }
             }
           }

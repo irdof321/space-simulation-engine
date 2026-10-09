@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oEW2Kb3S2lk=",
+  "dgSpecHash": "09JVbbi4uco=",
   "success": true,
-  "projectFilePath": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj",
+  "projectFilePath": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

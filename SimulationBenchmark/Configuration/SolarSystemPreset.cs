@@ -125,7 +125,7 @@ internal static class SolarSystemPreset
         // This is the relative binary-star orbit between BOTH system barycenters.
         // The semi-major axis is one light-year, so their mutual motion over
         // a few years is negligible compared with local planetary orbits.
-        const double separationLightYears = 1.0;
+        const double separationLightYears = 0.0001;
         OrbitalSystem systemB = scene.AddSystem(scene.Root,
             OrbitAu(separationLightYears * AppSettings.LightYear / AppSettings.AstronomicalUnit,
                 0.0, 0.0, 0.0, 0.0, 0.0));

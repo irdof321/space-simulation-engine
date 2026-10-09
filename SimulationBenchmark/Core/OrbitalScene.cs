@@ -13,6 +13,7 @@ internal sealed class BodyMarker
     public bool IsSatellite { get; }
     public bool IsStar { get; }
     public bool IsComet { get; }
+    public AxialRotation Spin { get; }
 
     public BodyMarker(string name, CelestBody body, Color color, float radiusPixels, bool isSatellite, bool isStar, bool isComet)
     {
@@ -23,6 +24,7 @@ internal sealed class BodyMarker
         IsSatellite = isSatellite;
         IsStar = isStar;
         IsComet = isComet;
+        Spin = BodyRotationCatalog.Create(name, isSatellite, isStar, isComet);
     }
 }
 

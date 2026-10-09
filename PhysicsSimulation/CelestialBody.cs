@@ -7,6 +7,13 @@ namespace PhysicsSimulation
         private Vector3Double _speed;
         private Vector3Double _position;
         private double _mass;
+        public AxialRotation? AxialRotation { get; set; }
+
+        public QuaternionDouble GetOrientation(double time)
+        {
+            return AxialRotation?.GetOrientation(time)
+                ?? new QuaternionDouble { W = 1, X = 0, Y = 0, Z = 0 };
+        }
 
         public Vector3Double Speed
         {

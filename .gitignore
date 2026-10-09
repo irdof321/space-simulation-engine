@@ -1,0 +1,47 @@
+# Visual Studio / IDE user files
+.vs/
+*.suo
+*.user
+*.rsuser
+*.userosscache
+*.sln.docstates
+*.slnx.user
+*.DotSettings.user
+.vscode/
+.idea/
+
+# .NET / C# build artifacts
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Aa]rtifacts/
+[Tt]est[Rr]esults/
+*.pdb
+*.mdb
+*.cache
+*.log
+
+# Local NuGet package caches / packaging artifacts
+packages/
+*.nupkg
+*.snupkg
+
+# Unity-generated files (safe even before a Unity project is added)
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+[Aa]ssets/AssetStoreTools*
+*.unitypackage
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep C# projects, solution files, Unity Assets, and .meta files tracked.

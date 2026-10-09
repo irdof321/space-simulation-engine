@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj",
+      "projectUniqueName": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj",
       "projectName": "PhysicsSimulation",
-      "projectPath": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\PhysicsSimulation.csproj",
+      "projectPath": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\PhysicsSimulation.csproj",
       "packagesPath": "C:\\Users\\irdof\\.nuget\\packages\\",
-      "outputPath": "E:\\c#project\\PhysicsSimulation\\PhysicsSimulation\\obj\\",
+      "outputPath": "E:\\c#project\\space-simulation-engine\\PhysicsSimulation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\irdof\\AppData\\Roaming\\NuGet\\NuGet.Config",
