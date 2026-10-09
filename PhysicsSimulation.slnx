@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="PhysicsSimulation/PhysicsSimulation.csproj" />
+  <Project Path="SimulationBenchmark/SimulationBenchmark.csproj" Id="2fd0b393-172b-418d-955b-54f978aac834" />
+</Solution>
