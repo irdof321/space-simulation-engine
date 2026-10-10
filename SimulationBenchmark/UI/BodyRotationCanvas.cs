@@ -4,7 +4,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using PhysicsSimulation;
+using PhysicsSimulation.Mathematics;
 
 // A separate, small 3D globe preview. This never draws in OrbitalCanvas.
 // Camera direction is chosen for an equatorial view of nearly-Z spin axes.

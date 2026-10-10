@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
 using System.Windows.Forms;
-using PhysicsSimulation;
+using PhysicsSimulation.Mathematics;
 
 // Generic XY renderer. All bodies and views come from SolarSystemPreset.
 internal sealed class OrbitalCanvas : Control

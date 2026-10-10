@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using PhysicsSimulation;
+using PhysicsSimulation.Dynamics;
+using PhysicsSimulation.Mathematics;
 
 internal static class LegacyBenchmark
 {

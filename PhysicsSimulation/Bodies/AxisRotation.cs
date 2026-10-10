@@ -1,4 +1,4 @@
-﻿using PhysicsSimulation;
+﻿using PhysicsSimulation.Mathematics;
 using System;
 
 public class AxialRotation

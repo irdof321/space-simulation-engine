@@ -1,5 +1,5 @@
 using System;
-using PhysicsSimulation;
+using PhysicsSimulation.Mathematics;
 
 // Standalone mathematical tests for QuaternionDouble and AxialRotation.
 // These tests do not depend on Unity, WinForms, or N-body integration.

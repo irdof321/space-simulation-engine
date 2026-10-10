@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
-using PhysicsSimulation;
+using PhysicsSimulation.Bodies;
+using PhysicsSimulation.Common;
+using PhysicsSimulation.Dynamics;
+using PhysicsSimulation.Mathematics;
+using PhysicsSimulation.Orbits;
 
 internal static class MultiBodyInitializationTests
 {

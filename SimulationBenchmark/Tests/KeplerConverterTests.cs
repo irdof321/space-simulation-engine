@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using PhysicsSimulation;
+using PhysicsSimulation.Dynamics;
+using PhysicsSimulation.Mathematics;
+using PhysicsSimulation.Orbits;
 
 internal static class KeplerConverterTests
 {

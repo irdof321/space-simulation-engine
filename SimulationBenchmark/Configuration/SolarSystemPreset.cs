@@ -1,6 +1,6 @@
 using System;
 using System.Drawing;
-using PhysicsSimulation;
+using PhysicsSimulation.Orbits;
 
 // EDIT THIS FILE to add/remove planets, moons, initial Kepler elements, and plot views.
 // Solar-system-like parameters are illustrative, NOT astronomical ephemerides.

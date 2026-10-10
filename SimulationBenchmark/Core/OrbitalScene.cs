@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using PhysicsSimulation;
+using PhysicsSimulation.Bodies;
+using PhysicsSimulation.Orbits;
 
 // Visualization metadata is kept OUTSIDE of the PhysicsSimulation engine.
 internal sealed class BodyMarker

@@ -1,5 +1,5 @@
 using System;
-using PhysicsSimulation;
+using PhysicsSimulation.Mathematics;
 
 // Illustrative, independent spin metadata for the live benchmark.
 // The renderer never alters orbital forces, positions, or integrator state.

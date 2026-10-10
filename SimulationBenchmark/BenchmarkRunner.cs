@@ -1,7 +1,8 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using PhysicsSimulation;
+using PhysicsSimulation.Dynamics;
+using PhysicsSimulation.Mathematics;
 
 public static class BenchmarkRunner
 {

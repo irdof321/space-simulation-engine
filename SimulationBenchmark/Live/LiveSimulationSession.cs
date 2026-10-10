@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
-using PhysicsSimulation;
+using PhysicsSimulation.Bodies;
+using PhysicsSimulation.Dynamics;
+using PhysicsSimulation.Mathematics;
+using PhysicsSimulation.Orbits;
 
 // Owns one initialized experiment. UI code only controls its playback.
 internal sealed class LiveSimulationSession

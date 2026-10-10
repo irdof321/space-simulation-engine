@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using PhysicsSimulation;
+using PhysicsSimulation.Dynamics;
 
 // This is the main entry point for changing runs and numerical parameters.
 internal enum RunMode
